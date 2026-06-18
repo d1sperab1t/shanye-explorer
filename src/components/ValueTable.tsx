@@ -71,7 +71,7 @@ export default function ValueTable() {
       </motion.div>
 
       {/* Table section */}
-      <div ref={ref} style={{ padding: '0 max(3vw, 48px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
+      <div ref={ref} className="value-table-grid" style={{ padding: '0 max(3vw, 48px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
 
         {/* Left: table */}
         <div>

@@ -178,25 +178,26 @@ export default function Benefits() {
         }} />
 
         {/* Text content — top area */}
-        <div ref={titleRef} style={{
+        <div ref={titleRef} className="benefits-photo-text" style={{
           position: 'absolute', top: 0, left: 0, right: 0,
           padding: 'clamp(48px, 6vw, 80px)',
           display: 'flex', flexDirection: 'column',
         }}>
           <motion.h2
+            className="benefits-hero-title"
             initial={{ opacity: 0, y: 24 }}
             animate={titleInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.75, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             style={{
               fontSize: 'clamp(44px, 7.5vw, 104px)',
               fontWeight: 900, color: 'white',
-              lineHeight: 0.93, letterSpacing: '-0.04em',
+              lineHeight: 1.05, letterSpacing: '-0.04em',
               marginBottom: 28, fontFamily: 'var(--sans)',
             }}
           >
-            <span style={{ marginRight: '0.3em' }}>从</span>零跑到<span style={{ color: 'var(--accent)' }}>领跑</span><br />
-            <span style={{ marginRight: '0.3em' }}>从</span>达人到<span style={{ color: 'var(--accent)' }}>山野人</span><br />
-            <span style={{ marginRight: '0.3em' }}>从</span>探路者到<span style={{ color: 'var(--accent)' }}>传承记录者</span>
+            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>零跑到<span style={{ color: 'var(--accent)' }}>领跑</span></div>
+            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>达人到<span style={{ color: 'var(--accent)' }}>山野人</span></div>
+            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>探路者到<span style={{ color: 'var(--accent)' }}>传承记录者</span></div>
           </motion.h2>
 
           <motion.p
@@ -254,7 +255,7 @@ export default function Benefits() {
       </motion.div>
 
       {/* Featured perks — horizontal image cards */}
-      <div style={{ padding: '0 max(3vw, 48px)', marginBottom: 80 }}>
+      <div className="benefits-section-pad" style={{ padding: '0 max(3vw, 48px)', marginBottom: 80 }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 12,
           marginBottom: 32,
@@ -263,7 +264,7 @@ export default function Benefits() {
           <span style={{ display: 'block', width: 20, height: 2, background: 'var(--accent)' }} />
           Featured Experience · 2026
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+        <div className="benefits-featured-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
           {[
             {
               img: '/sucai/01.jpg',
@@ -329,8 +330,8 @@ export default function Benefits() {
       </div>
 
       {/* Section label */}
-      <div style={{ padding: '0 max(3vw, 48px)', marginBottom: 40 }}>
-        <div style={{
+      <div className="benefits-section-pad" style={{ padding: '0 max(3vw, 48px)', marginBottom: 40 }}>
+        <div className="benefits-label-row" style={{
           display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
           borderBottom: '2px solid var(--dark)', paddingBottom: 20,
         }}>
@@ -356,7 +357,7 @@ export default function Benefits() {
       </div>
 
       {/* Cards grid */}
-      <div style={{
+      <div className="benefits-cards-grid" style={{
         padding: '0 max(3vw, 48px)',
         display: 'grid',
         gridTemplateColumns: 'repeat(2, 1fr)',

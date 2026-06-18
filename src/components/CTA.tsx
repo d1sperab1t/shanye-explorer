@@ -81,7 +81,7 @@ export default function CTA() {
           background: 'linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.3) 100%)',
         }} />
 
-        <div style={{
+        <div className="cta-inner" style={{
           position: 'relative', zIndex: 10,
           padding: 'clamp(48px, 8vw, 100px) max(4vw, 60px)',
           maxWidth: 760,
@@ -151,6 +151,7 @@ export default function CTA() {
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.58 }}
+            className="cta-price-row"
             style={{ display: 'flex', alignItems: 'flex-end', gap: 32, flexWrap: 'wrap' }}
           >
             <div>

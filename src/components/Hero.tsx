@@ -48,19 +48,20 @@ export default function Hero() {
       }} />
 
       {/* Nav */}
-      <nav style={{
+      <nav className="nav-wrapper" style={{
         position: 'relative', zIndex: 10,
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '28px 48px',
       }}>
         <motion.span
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}
-          style={{ color: 'white', fontWeight: 800, fontSize: 11, letterSpacing: '0.08em', whiteSpace: 'nowrap' }}
+          style={{ color: 'white', fontWeight: 800, fontSize: 11, letterSpacing: '0.08em', whiteSpace: 'nowrap', flex: 1, textAlign: 'center' }}
         >
-          莫干山户外运动协会 × 山野梦想家 × DEEPBEAT
+          莫干山户外运动协会 × 山野梦想家 × DEEPBEAT<span style={{ fontFamily: 'var(--serif)', fontWeight: 400, letterSpacing: '0.12em' }}>记路家</span>
         </motion.span>
         <motion.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.1 }}
+          className="nav-links"
           style={{ display: 'flex', gap: 36, alignItems: 'center' }}
         >
           {['关于', '权益', '报名'].map(item => (
@@ -81,7 +82,7 @@ export default function Hero() {
       </nav>
 
       {/* Main title block */}
-      <div style={{
+      <div className="hero-content" style={{
         flex: 1, position: 'relative', zIndex: 10,
         display: 'flex', flexDirection: 'column',
         justifyContent: 'flex-end',
@@ -158,6 +159,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.9 }}
+        className="hero-badge"
         style={{
           position: 'relative', zIndex: 10,
           padding: '0 48px',
@@ -183,6 +185,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.75 }}
+        className="hero-explore"
         style={{
           position: 'relative', zIndex: 10,
           margin: '48px',

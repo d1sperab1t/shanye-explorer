@@ -41,3 +41,41 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* ── Mobile responsive ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Hero nav */
+  .nav-wrapper { padding: 20px 20px !important; }
+  .nav-links   { display: none !important; }
+
+  /* Hero content areas */
+  .hero-content  { padding: 0 20px 0 !important; }
+  .hero-badge    { padding: 0 20px !important; }
+  .hero-explore  { margin: 32px 20px !important; }
+
+  /* Benefits section */
+  .benefits-photo-text { padding: 28px 20px !important; }
+  .benefits-hero-title { font-size: 6.8vw !important; letter-spacing: -0.02em !important; }
+  .benefits-stats-row  { max-width: 100% !important; }
+  .benefits-featured-grid { grid-template-columns: 1fr !important; }
+  .benefits-featured-grid > div { width: 100%; }
+  .benefits-section-pad { padding: 0 20px !important; }
+  .benefits-label-row  {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+  .benefits-label-row p { text-align: left !important; max-width: 100% !important; }
+  .benefits-cards-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; }
+
+  /* ValueTable section */
+  .value-table-grid { grid-template-columns: 1fr !important; gap: 24px !important; padding: 0 20px !important; }
+
+  /* CTA section */
+  .cta-inner { padding: 48px 20px !important; }
+  .cta-price-row { gap: 16px !important; }
+
+  /* Footer */
+  .footer-wrap { padding: 40px 20px !important; flex-direction: column !important; align-items: flex-start !important; }
+  .footer-wrap > div:last-child { text-align: left !important; }
+}
