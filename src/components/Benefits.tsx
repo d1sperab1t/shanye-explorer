@@ -214,33 +214,6 @@ export default function Benefits() {
             每一项权益都是为认真对待运动的内容创作者量身设计。
           </motion.p>
 
-          {/* Stats row */}
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={titleInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.32 }}
-            style={{
-              display: 'flex', gap: 0, marginTop: 44,
-              borderTop: '1px solid rgba(255,255,255,0.12)',
-              paddingTop: 32, maxWidth: 400,
-            }}
-          >
-            {[['10', '专属权益'], ['15', '首期名额'], ['48h', '活动时长']].map(([num, label], i) => (
-              <div key={label} style={{
-                flex: 1,
-                paddingRight: 28,
-                borderRight: i < 2 ? '1px solid rgba(255,255,255,0.12)' : 'none',
-                marginRight: i < 2 ? 28 : 0,
-              }}>
-                <div style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 900, color: 'white', lineHeight: 1, letterSpacing: '-0.03em' }}>
-                  {num}
-                </div>
-                <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.14em', marginTop: 8, textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                  {label}
-                </div>
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         {/* Bottom location label */}
