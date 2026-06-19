@@ -4,63 +4,63 @@ import { useRef } from 'react'
 const benefits = [
   {
     num: '01',
-    title: '探路者专属大礼包',
+    title: '专属山野梦想家定制礼包',
     tag: '入营即获',
-    items: ['莫干山越野地图', '运动护肤套装', '探路者运动服 + 运动袜', '专属定制行程单', '功能性营养补剂', '神秘礼物盲盒'],
+    items: ['定制莫干山寻迹全景地图', '山野运动专属护肤套装', '第一视角专业视频拍摄全流程指导', '专业功能性运动营养补给套装', '限定惊喜神秘礼物盲盒'],
   },
   {
     num: '02',
-    title: '48小时倒计时城市落跑计划',
+    title: '48小时倒计时·山野落跑专属计划',
     tag: '官方认证',
-    items: ['抵达即启动，以时间为轴贯穿整个活动', '全程任务驱动，积累专属山野足迹', '有始有终的仪式感'],
+    items: ['以48小时倒计时主线贯穿全程活动', '沉浸式任务驱动，积累专属个人山野运动印记', '莫干山户外协会官方专属认证'],
   },
   {
     num: '03',
-    title: '莫干山传承人深度探索',
+    title: '非遗传承人·深度山野文脉探索',
     tag: '文化溯源',
-    items: ['跟随传承人深入山野', '了解莫干山文化脉络与地形肌理', '山野精神传递与路线设计灵感起点'],
+    items: ['跟随非遗传承人实地踏查山野', '深度勘探百年人文与自然文化脉络', '完成山野精神的文化传承与价值传递'],
   },
   {
     num: '04',
-    title: '专属越野路线设计',
+    title: '独家定制·莫干山专属运动路线设计',
     tag: '独家权益',
-    items: ['亲自设计一条莫干山越野路线', '篝火晚宴正式发布并接受投票', '最高分路线收纳进官方路线库', '有机会成为下届赛事指定路线'],
+    items: ['自主DIY原创设计专属莫干山山野运动路线', '优质原创路线纳入莫干山官方路线资源库存档', '获得下一届官方赛事路线设计参与资格'],
   },
   {
     num: '05',
-    title: '专业运动恢复理疗',
+    title: '专业级运动恢复·理疗康复体系体验',
     tag: '科学恢复',
-    items: ['高端被动训练设备理疗服务', '专业康复团队系统干预', '科学恢复，认真对待身体'],
+    items: ['体验顶尖运动员同款被动科学训练体系', '专业运动康复团队一对一系统化干预指导', '掌握科学运动、高效恢复的专业训练方法'],
   },
   {
     num: '06',
-    title: '高山氧运动健康体验',
+    title: '高山氧高阶心肺健康管理赛前增益',
     tag: '运动科学',
-    items: ['莫干山专属高山氧设备体验', '心肺功能采样记录与训练', '感受山野环境下真实的运动数据'],
+    items: ['全方位深度身体机能检测', '模拟海拔高低氧交替训练', '心肺功能精准记录与提升建议'],
   },
   {
     num: '07',
-    title: '寻迹·落日逐光赛事参与资格',
+    title: '寻迹落日·逐光越野赛事专属名额',
     tag: '官方赛事',
-    items: ['山野梦想家官方赛事参与资格', '莫干山山脊与竹林间奔跑', '用身体丈量这片土地'],
+    items: ['获赠山野梦想家限定专属运动服饰', '直通10.6km寻迹主题落日越野跑赛事名额', '专属CP补给点定点抓拍记录高光瞬间'],
   },
   {
     num: '08',
-    title: '山野视觉全套内容服务',
+    title: '全流程视觉影像全程服务',
     tag: '内容冷启动',
-    items: ['山野视觉教学课程', '专业团队跟拍共创6条短视频', '官方投流资金补贴'],
+    items: ['高阶山野运动视觉美学教学', '专业摄影团队全程第三视角跟拍', '定制产出6条个人专属短视频产出', '享受官方专属流量投流扶持补贴'],
   },
   {
     num: '09',
-    title: '篝火晚宴 · 晚安双重礼',
+    title: '山野旅居礼遇·篝火跨界晚宴双重体验',
     tag: '身体闭环',
-    items: ['篝火晚宴 · 路线发布 · 投票仪式', '高端被动训练设备深度恢复体验', '专属助眠礼遇，进入深度恢复'],
+    items: ['山野梦想家原创DIY路线投票仪式', '篝火晚宴跨界圈层深度交流', '尊享山野晚安助眠礼遇'],
   },
   {
     num: '10',
-    title: '莫干山文化传承者身份授予',
+    title: '终身莫干山文化传承者身份授予',
     tag: '永久身份',
-    items: ['篝火晚宴现场正式授予身份', '颁发专属实体证书', '永久有效的山野背书'],
+    items: ['莫干山户外运动协会官方运动博主认证', '实体证书官方颁发仪式', '莫干山山野文化传承者背书'],
   },
 ]
 
@@ -76,7 +76,7 @@ function BenefitCard({ b, index }: { b: typeof benefits[0]; index: number }) {
       transition={{ duration: 0.65, delay: (index % 2) * 0.08, ease: [0.22, 1, 0.36, 1] }}
       style={{
         background: 'var(--card)',
-        padding: '36px 32px',
+        padding: '40px 32px 48px',
         display: 'flex', flexDirection: 'column', gap: 20,
         borderBottom: '3px solid transparent',
         transition: 'border-color 0.25s, box-shadow 0.25s',
@@ -195,9 +195,18 @@ export default function Benefits() {
               marginBottom: 28, fontFamily: 'var(--sans)',
             }}
           >
-            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>零跑到<span style={{ color: 'var(--accent)' }}>领跑</span></div>
-            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>达人到<span style={{ color: 'var(--accent)' }}>山野人</span></div>
-            <div style={{ whiteSpace: 'nowrap' }}><span style={{ marginRight: '0.3em' }}>从</span>探路者到<span style={{ color: 'var(--accent)' }}>传承记录者</span></div>
+            {[
+              ['零跑', '领跑'],
+              ['达人', '山野人'],
+              ['记路者', '传承记录者'],
+            ].map(([from, to]) => (
+              <div key={from} style={{ display: 'grid', gridTemplateColumns: 'max-content max-content max-content max-content', alignItems: 'baseline', gap: '0 0.18em', whiteSpace: 'nowrap' }}>
+                <span style={{ color: 'rgba(255,255,255,0.4)' }}>从</span>
+                <span>{from}</span>
+                <span style={{ color: 'rgba(255,255,255,0.4)' }}>到</span>
+                <span style={{ color: 'var(--accent)' }}>{to}</span>
+              </div>
+            ))}
           </motion.h2>
 
           <motion.p
@@ -242,7 +251,7 @@ export default function Benefits() {
             {
               img: '/sucai/01.jpg',
               title: '入住莫干山 Joe Lalli 郡安里度假酒店',
-              desc: '坐落于莫干山竹林深处，全球顶级度假品牌郡安里，为探路者专属呈现。',
+              desc: '坐落于莫干山竹林深处，全球顶级度假品牌郡安里，为记路家专属呈现。',
             },
             {
               img: '/sucai/02.jpg',
@@ -257,7 +266,7 @@ export default function Benefits() {
             {
               img: '/sucai/04.jpg',
               title: '优先抢购超级赛事名额',
-              desc: '探路者身份赋予你最先一步的机会，顶级赛事名额，优先锁定，不错过每一场值得的出发。',
+              desc: '记路家身份赋予你最先一步的机会，顶级赛事名额，优先锁定，不错过每一场值得的出发。',
               note: '*超级赛事名额限量，以届时发布名额数量为准',
             },
           ].map((item, i) => (

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-const WORDS = ['探路者', '传承人', '山野人', '梦想家']
+const WORDS = ['记路家', '传承人', '山野人', '梦想家']
 
 export default function Hero() {
   const [wordIdx, setWordIdx] = useState(0)
@@ -50,35 +50,15 @@ export default function Hero() {
       {/* Nav */}
       <nav className="nav-wrapper" style={{
         position: 'relative', zIndex: 10,
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        display: 'flex', justifyContent: 'center', alignItems: 'center',
         padding: '28px 48px',
       }}>
         <motion.span
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}
-          style={{ color: 'white', fontWeight: 800, fontSize: 11, letterSpacing: '0.08em', whiteSpace: 'nowrap', flex: 1, textAlign: 'center' }}
+          style={{ color: 'white', fontWeight: 800, fontSize: 11, letterSpacing: '0.08em', whiteSpace: 'nowrap', textAlign: 'center' }}
         >
           莫干山户外运动协会 × 山野梦想家 × DEEPBEAT<span style={{ fontFamily: 'var(--serif)', fontWeight: 400, letterSpacing: '0.12em' }}>记路家</span>
         </motion.span>
-        <motion.div
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.1 }}
-          className="nav-links"
-          style={{ display: 'flex', gap: 36, alignItems: 'center' }}
-        >
-          {['关于', '权益', '报名'].map(item => (
-            <span key={item} style={{ color: 'rgba(255,255,255,0.72)', fontSize: 13, letterSpacing: '0.06em', cursor: 'pointer' }}>
-              {item}
-            </span>
-          ))}
-          <a href="https://my.feishu.cn/share/base/form/shrcnqbR2ABIkzdEQHAKjSAwOib" target="_blank" rel="noopener noreferrer" style={{
-            background: 'white', color: '#0A0A0A',
-            border: 'none', padding: '10px 22px',
-            fontSize: 12, fontWeight: 700, letterSpacing: '0.1em',
-            cursor: 'pointer', textTransform: 'uppercase',
-            textDecoration: 'none', display: 'inline-block',
-          }}>
-            立即报名
-          </a>
-        </motion.div>
       </nav>
 
       {/* Main title block */}
@@ -103,13 +83,13 @@ export default function Hero() {
         </motion.div>
 
         <h1 style={{
-          fontSize: 'clamp(64px, 12vw, 172px)',
+          fontSize: 'clamp(52px, 13.5vw, 172px)',
           fontWeight: 900, lineHeight: 1.0,
           letterSpacing: '0.04em',
           fontFamily: "'Noto Sans SC', sans-serif",
         }}>
           <div style={{ color: 'white' }}>寻迹莫干山</div>
-          <div style={{ color: 'var(--accent)' }}>探路者计划</div>
+          <div style={{ color: 'var(--accent)' }}>记路家计划</div>
         </h1>
 
         <motion.div

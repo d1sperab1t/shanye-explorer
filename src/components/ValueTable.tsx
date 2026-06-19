@@ -2,8 +2,8 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const rows = [
-  { label: '住宿2晚（¥1,500×2）', value: '¥3,000' },
-  { label: '探路者专属大礼包', value: '¥1,500' },
+  { label: '野奢度假酒店住宿2晚', value: '¥3,000' },
+  { label: '记路家专属大礼包', value: '¥1,500' },
   { label: '专业运动恢复理疗', value: '¥3,000/次' },
   { label: '晚安双重恢复礼', value: '¥500' },
   { label: '6条短视频拍摄剪辑', value: '¥9,800' },
@@ -114,7 +114,7 @@ export default function ValueTable() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.75, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="value-price-col"
-          style={{ display: 'flex', flexDirection: 'column', gap: 24, minHeight: 640 }}
+          style={{ display: 'flex', flexDirection: 'column', gap: 24 }}
         >
           {/* Price callout */}
           <div style={{

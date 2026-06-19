@@ -95,7 +95,7 @@ export default function CTA() {
               fontSize: 11, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.5)',
               textTransform: 'uppercase', marginBottom: 24,
               textAlign: 'center',
-              whiteSpace: 'nowrap',
+              overflowWrap: 'break-word',
             }}
           >
             莫干山户外运动协会 × 山野梦想家 × DEEPBEAT<span style={{ fontFamily: 'var(--serif)', fontWeight: 400, letterSpacing: '0.12em', textTransform: 'none' }}>记路家</span>

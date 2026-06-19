@@ -11,7 +11,7 @@ export default function Footer() {
           Moganshan Road Explorer Project
         </div>
         <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.08em' }}>
-          © 2026 寻迹莫干山 · 探路者计划
+          © 2026 寻迹莫干山 · 记路家计划
         </div>
       </div>
 
